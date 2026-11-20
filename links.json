@@ -1,0 +1,1988 @@
+[
+  {
+    "url": "https://huggingface.co/apple/DepthPro2",
+    "title": "Depth Pro 2 model card",
+    "category": "Depth Pro 2",
+    "subsection": "Official release",
+    "blurb": "Apple's Hub card for Depth Pro 2: sharp, temporally consistent metric monocular depth for photos, video, and live feeds at the input's full resolution. Lists the four sizes, the shared focal estimator, the quick start, and the research-only Apple ML Research Model license (apple-amlr).",
+    "sources": [
+      "seed-manual",
+      "hf-api",
+      "vendor-pages"
+    ],
+    "pin": 1
+  },
+  {
+    "url": "https://apple-aiml-research.github.io/ml-depth-pro-2/",
+    "title": "Depth Pro 2 project page",
+    "category": "Depth Pro 2",
+    "subsection": "Official release",
+    "blurb": "Official project site with image and video comparisons, the method figure, and the claim that Depth Pro 2 outperforms prior single-frame and multi-frame work on Boundary F1 sharpness and temporal jitter, averaged over Sintel and Spring.",
+    "sources": [
+      "seed-manual",
+      "vendor-pages"
+    ],
+    "pin": 2
+  },
+  {
+    "url": "https://github.com/apple-aiml-research/ml-depth-pro-2",
+    "title": "ml-depth-pro-2",
+    "category": "Depth Pro 2",
+    "subsection": "Official release",
+    "blurb": "Official inference code and CLI. Install with pip from this repo, or clone and run uv run depth-pro-2 predict. The README says the repository does not include training or evaluation code. The code license is Apple's software license; the weights are under LICENSE_MODEL.",
+    "sources": [
+      "seed-manual",
+      "vendor-pages"
+    ],
+    "pin": 3
+  },
+  {
+    "url": "https://arxiv.org/abs/2611.26603",
+    "title": "Depth Pro 2 paper",
+    "category": "Depth Pro 2",
+    "subsection": "Official release",
+    "blurb": "Hu, Mihajlovic, Duong, Lipson, Dong, Delaunoy, Richter, and Koltun, Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth, arXiv:2611.26603, submitted 19 November 2026.",
+    "sources": [
+      "seed-manual",
+      "vendor-pages"
+    ],
+    "pin": 4
+  },
+  {
+    "url": "https://github.com/apple-aiml-research/ml-depth-pro-2/blob/main/LICENSE_MODEL",
+    "title": "Apple ML Research Model license",
+    "category": "Depth Pro 2",
+    "subsection": "Official release",
+    "blurb": "LICENSE_MODEL for the Depth Pro 2 weights. The grant is limited to Research Purposes, defined as non-commercial scientific research and academic development, and it excludes commercial product or service use.",
+    "sources": [
+      "seed-manual",
+      "vendor-pages"
+    ],
+    "pin": 5
+  },
+  {
+    "url": "https://huggingface.co/apple/DepthPro2-S",
+    "title": "Depth Pro 2 S",
+    "category": "Depth Pro 2",
+    "subsection": "Sizes and weights",
+    "blurb": "Smallest public size: 24M parameters, 97 MB download, Hub id apple/DepthPro2-S. Official guidance is to start with S on a laptop. Same apple-amlr research-only license as the rest of the family.",
+    "sources": [
+      "seed-manual",
+      "hf-api",
+      "vendor-pages"
+    ],
+    "pin": 1
+  },
+  {
+    "url": "https://huggingface.co/apple/DepthPro2-B",
+    "title": "Depth Pro 2 B",
+    "category": "Depth Pro 2",
+    "subsection": "Sizes and weights",
+    "blurb": "97M parameters, 386 MB download, Hub id apple/DepthPro2-B. Larger sizes are described as sharper and steadier; smaller ones run faster. Research-only apple-amlr license.",
+    "sources": [
+      "seed-manual",
+      "hf-api",
+      "vendor-pages"
+    ],
+    "pin": 2
+  },
+  {
+    "url": "https://huggingface.co/apple/DepthPro2-L",
+    "title": "Depth Pro 2 L",
+    "category": "Depth Pro 2",
+    "subsection": "Sizes and weights",
+    "blurb": "334M parameters, 1.3 GB download, Hub id apple/DepthPro2-L. Research-only apple-amlr license.",
+    "sources": [
+      "seed-manual",
+      "hf-api",
+      "vendor-pages"
+    ],
+    "pin": 3
+  },
+  {
+    "url": "https://huggingface.co/apple/DepthPro2-H",
+    "title": "Depth Pro 2 H+",
+    "category": "Depth Pro 2",
+    "subsection": "Sizes and weights",
+    "blurb": "Largest public size and the default in the official CLI: 872M parameters, 3.5 GB download, Hub id apple/DepthPro2-H (H+ on the card). Research-only apple-amlr license.",
+    "sources": [
+      "seed-manual",
+      "hf-api",
+      "vendor-pages"
+    ],
+    "pin": 4
+  },
+  {
+    "url": "https://huggingface.co/apple/DepthPro2-focal",
+    "title": "Depth Pro 2 focal estimator",
+    "category": "Depth Pro 2",
+    "subsection": "Sizes and weights",
+    "blurb": "Shared 23.5M-parameter (94 MB) focal-length estimator, Hub id apple/DepthPro2-focal. It loads with each size and predicts focal length in pixels when the camera does not report one. Same research-only license.",
+    "sources": [
+      "seed-manual",
+      "hf-api",
+      "vendor-pages"
+    ],
+    "pin": 5
+  },
+  {
+    "url": "https://huggingface.co/apple/DepthPro2-coreml",
+    "title": "Depth Pro 2 Core ML",
+    "category": "Depth Pro 2",
+    "subsection": "Ports and demos",
+    "blurb": "Official Core ML packages for S, B, L, H+, and a field-of-view model, for Apple silicon on macOS 15 or later. The card documents w4 temporal windows, named input sizes, and that inverse depth is normalized by focal length. Research-only apple-amlr license.",
+    "sources": [
+      "seed-manual",
+      "hf-api",
+      "vendor-pages"
+    ],
+    "pin": 1
+  },
+  {
+    "url": "https://github.com/apple-aiml-research/ml-depth-pro-2/blob/main/demo/README.md",
+    "title": "Depth Pro 2 Mac demo",
+    "category": "Depth Pro 2",
+    "subsection": "Ports and demos",
+    "blurb": "Official demo README for a minimal Mac app that shows live camera depth with Core ML, including how to export a package and use it in an app. Requires Apple silicon, macOS 15 or later, and Xcode 16 or later or its command line tools.",
+    "sources": [
+      "seed-manual",
+      "vendor-pages"
+    ],
+    "pin": 2
+  },
+  {
+    "url": "https://huggingface.co/spaces/akhaliq/DepthPro2",
+    "title": "Depth Pro 2 Space (akhaliq)",
+    "category": "Depth Pro 2",
+    "subsection": "Ports and demos",
+    "blurb": "Community Gradio Space for metric monocular depth from photos and videos. The official Space linked from the project page returned 401 to this checker and is not listed.",
+    "sources": [
+      "seed-manual",
+      "hf-api"
+    ],
+    "pin": 3
+  },
+  {
+    "url": "https://github.com/apple-aiml-research/ml-depth-pro",
+    "title": "ml-depth-pro",
+    "category": "Models",
+    "subsection": "Depth Pro v1",
+    "blurb": "Official code for Depth Pro, Apple's 2024 metric monocular depth model. The older apple/ml-depth-pro URL now redirects here.",
+    "sources": [
+      "seed-manual",
+      "vendor-pages"
+    ],
+    "pin": 1
+  },
+  {
+    "url": "https://huggingface.co/apple/DepthPro",
+    "title": "Depth Pro weights",
+    "category": "Models",
+    "subsection": "Depth Pro v1",
+    "blurb": "Hub weights for Depth Pro v1. The Hub license field is apple-amlr, the same research-license family as Depth Pro 2.",
+    "sources": [
+      "seed-manual",
+      "hf-api",
+      "vendor-pages"
+    ],
+    "pin": 2
+  },
+  {
+    "url": "https://huggingface.co/apple/DepthPro-hf",
+    "title": "Depth Pro (transformers)",
+    "category": "Models",
+    "subsection": "Depth Pro v1",
+    "blurb": "Hub checkpoint used by the Hugging Face transformers DepthPro model. The transformers docs target this v1 line, not Depth Pro 2.",
+    "sources": [
+      "seed-manual",
+      "hf-api"
+    ],
+    "pin": 3
+  },
+  {
+    "url": "https://arxiv.org/abs/2410.02073",
+    "title": "Depth Pro paper",
+    "category": "Models",
+    "subsection": "Depth Pro v1",
+    "blurb": "Bochkovskii et al., Depth Pro: Sharp Monocular Metric Depth in Less Than a Second, arXiv:2410.02073.",
+    "sources": [
+      "seed-manual",
+      "vendor-pages"
+    ],
+    "pin": 4
+  },
+  {
+    "url": "https://machinelearning.apple.com/research/depth-pro",
+    "title": "Depth Pro research page",
+    "category": "Models",
+    "subsection": "Depth Pro v1",
+    "blurb": "Apple ML Research page for the original Depth Pro. A corresponding depth-pro-2 research page was not up (404) when this list was built.",
+    "sources": [
+      "seed-manual",
+      "vendor-pages"
+    ],
+    "pin": 5
+  },
+  {
+    "url": "https://github.com/LiheYoung/Depth-Anything",
+    "title": "Depth Anything",
+    "category": "Models",
+    "subsection": "Foundation and relative depth",
+    "blurb": "Official code for Depth Anything (CVPR 2024), a foundation model for monocular depth trained with large-scale unlabeled data. Apache-2.0.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 1
+  },
+  {
+    "url": "https://depth-anything.github.io/",
+    "title": "Depth Anything project page",
+    "category": "Models",
+    "subsection": "Foundation and relative depth",
+    "blurb": "Official project site for Depth Anything v1.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 2
+  },
+  {
+    "url": "https://arxiv.org/abs/2401.10891",
+    "title": "Depth Anything paper",
+    "category": "Models",
+    "subsection": "Foundation and relative depth",
+    "blurb": "Yang et al., Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data, arXiv:2401.10891.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 3
+  },
+  {
+    "url": "https://github.com/DepthAnything/Depth-Anything-V2",
+    "title": "Depth Anything V2",
+    "category": "Models",
+    "subsection": "Foundation and relative depth",
+    "blurb": "Official code for Depth Anything V2 (NeurIPS 2024), a later foundation model for monocular depth. Apache-2.0.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 4
+  },
+  {
+    "url": "https://depth-anything-v2.github.io/",
+    "title": "Depth Anything V2 project page",
+    "category": "Models",
+    "subsection": "Foundation and relative depth",
+    "blurb": "Official project site for Depth Anything V2.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 5
+  },
+  {
+    "url": "https://arxiv.org/abs/2406.09414",
+    "title": "Depth Anything V2 paper",
+    "category": "Models",
+    "subsection": "Foundation and relative depth",
+    "blurb": "Yang et al., Depth Anything V2, arXiv:2406.09414.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 6
+  },
+  {
+    "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Large",
+    "title": "Depth Anything V2 Large",
+    "category": "Models",
+    "subsection": "Foundation and relative depth",
+    "blurb": "Hub weights for the large Depth Anything V2 checkpoint.",
+    "sources": [
+      "seed-manual",
+      "hf-api"
+    ],
+    "pin": 7
+  },
+  {
+    "url": "https://huggingface.co/collections/depth-anything/depth-anything-v2",
+    "title": "Depth Anything V2 collection",
+    "category": "Models",
+    "subsection": "Foundation and relative depth",
+    "blurb": "Official Hub collection of Depth Anything V2 checkpoints.",
+    "sources": [
+      "seed-manual",
+      "hf-api"
+    ],
+    "pin": 8
+  },
+  {
+    "url": "https://github.com/ByteDance-Seed/Depth-Anything-3",
+    "title": "Depth Anything 3",
+    "category": "Models",
+    "subsection": "Foundation and relative depth",
+    "blurb": "Official ByteDance Seed code for Depth Anything 3 (DA3, ICLR 2026). A plain transformer predicts spatially consistent geometry from any number of views, with or without known poses, and the authors also report monocular depth against Depth Anything V2. Apache-2.0. Trained, the repo says, exclusively on public academic datasets.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 9
+  },
+  {
+    "url": "https://depth-anything-3.github.io/",
+    "title": "Depth Anything 3 project page",
+    "category": "Models",
+    "subsection": "Foundation and relative depth",
+    "blurb": "Official DA3 project site, including the any-view setting and a community project list.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 10
+  },
+  {
+    "url": "https://arxiv.org/abs/2511.10647",
+    "title": "Depth Anything 3 paper",
+    "category": "Models",
+    "subsection": "Foundation and relative depth",
+    "blurb": "Lin, Chen, Liew, Chen, Li, Shi, Feng, and Kang, Depth Anything 3: Recovering the Visual Space from Any Views, arXiv:2511.10647.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 11
+  },
+  {
+    "url": "https://huggingface.co/depth-anything/DA3-LARGE",
+    "title": "DA3-LARGE",
+    "category": "Models",
+    "subsection": "Foundation and relative depth",
+    "blurb": "Hub weights for a large Depth Anything 3 checkpoint.",
+    "sources": [
+      "seed-manual",
+      "hf-api"
+    ],
+    "pin": 12
+  },
+  {
+    "url": "https://huggingface.co/collections/depth-anything/depth-anything-3",
+    "title": "Depth Anything 3 collection",
+    "category": "Models",
+    "subsection": "Foundation and relative depth",
+    "blurb": "Official Hub collection of Depth Anything 3 checkpoints.",
+    "sources": [
+      "seed-manual",
+      "hf-api"
+    ],
+    "pin": 13
+  },
+  {
+    "url": "https://github.com/isl-org/MiDaS",
+    "title": "MiDaS",
+    "category": "Models",
+    "subsection": "Foundation and relative depth",
+    "blurb": "Intelligent Systems Lab (Intel ISL) code for robust monocular depth by mixing datasets for zero-shot cross-dataset transfer. MIT. Still the baseline many later models compare against.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 14
+  },
+  {
+    "url": "https://arxiv.org/abs/1907.01341",
+    "title": "MiDaS paper",
+    "category": "Models",
+    "subsection": "Foundation and relative depth",
+    "blurb": "Ranftl et al., Towards Robust Monocular Depth Estimation: Mixing Datasets for Zero-shot Cross-dataset Transfer, arXiv:1907.01341 (later TPAMI).",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 15
+  },
+  {
+    "url": "https://pytorch.org/hub/intelisl_midas_v2/",
+    "title": "MiDaS on PyTorch Hub",
+    "category": "Models",
+    "subsection": "Foundation and relative depth",
+    "blurb": "PyTorch Hub entry for Intel ISL MiDaS v2, a common way to load the classic relative-depth models.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 16
+  },
+  {
+    "url": "https://github.com/isl-org/DPT",
+    "title": "DPT",
+    "category": "Models",
+    "subsection": "Foundation and relative depth",
+    "blurb": "Dense Prediction Transformers: ISL's ViT decoder used for monocular depth and later reused inside many depth models, including Depth Pro 2's DPT decoder. MIT.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 17
+  },
+  {
+    "url": "https://arxiv.org/abs/2103.13413",
+    "title": "DPT paper",
+    "category": "Models",
+    "subsection": "Foundation and relative depth",
+    "blurb": "Ranftl, Bochkovskiy, and Koltun, Vision Transformers for Dense Prediction, arXiv:2103.13413.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 18
+  },
+  {
+    "url": "https://huggingface.co/Intel/dpt-large",
+    "title": "DPT-Large",
+    "category": "Models",
+    "subsection": "Foundation and relative depth",
+    "blurb": "Hub weights for Intel's DPT-Large dense prediction / depth model.",
+    "sources": [
+      "seed-manual",
+      "hf-api"
+    ],
+    "pin": 19
+  },
+  {
+    "url": "https://huggingface.co/Intel/dpt-hybrid-midas",
+    "title": "DPT-Hybrid MiDaS",
+    "category": "Models",
+    "subsection": "Foundation and relative depth",
+    "blurb": "Hub weights for the DPT-Hybrid MiDaS checkpoint.",
+    "sources": [
+      "seed-manual",
+      "hf-api"
+    ],
+    "pin": 20
+  },
+  {
+    "url": "https://github.com/isl-org/ZoeDepth",
+    "title": "ZoeDepth",
+    "category": "Models",
+    "subsection": "Metric monocular",
+    "blurb": "ISL's metric depth model that combines relative and metric depth for zero-shot transfer from a single image. MIT.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 1
+  },
+  {
+    "url": "https://arxiv.org/abs/2302.12288",
+    "title": "ZoeDepth paper",
+    "category": "Models",
+    "subsection": "Metric monocular",
+    "blurb": "Bhat et al., ZoeDepth: Zero-shot Transfer by Combining Relative and Metric Depth, arXiv:2302.12288.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 2
+  },
+  {
+    "url": "https://github.com/YvanYin/Metric3D",
+    "title": "Metric3D",
+    "category": "Models",
+    "subsection": "Metric monocular",
+    "blurb": "Official repo for Metric3D and Metric3D v2, a monocular geometric foundation model for zero-shot metric depth and surface normals. BSD-2-Clause.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 3
+  },
+  {
+    "url": "https://jugghm.github.io/Metric3Dv2/",
+    "title": "Metric3D v2 project page",
+    "category": "Models",
+    "subsection": "Metric monocular",
+    "blurb": "Official project site for Metric3D v2.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 4
+  },
+  {
+    "url": "https://arxiv.org/abs/2307.10984",
+    "title": "Metric3D paper",
+    "category": "Models",
+    "subsection": "Metric monocular",
+    "blurb": "Yin et al., Metric3D: Towards Zero-shot Metric 3D Prediction from A Single Image, arXiv:2307.10984.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 5
+  },
+  {
+    "url": "https://arxiv.org/abs/2404.15506",
+    "title": "Metric3D v2 paper",
+    "category": "Models",
+    "subsection": "Metric monocular",
+    "blurb": "Hu et al., Metric3Dv2: A Versatile Monocular Geometric Foundation Model for Zero-shot Metric Depth and Surface Normal Estimation, arXiv:2404.15506.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 6
+  },
+  {
+    "url": "https://github.com/lpiccinelli-eth/UniDepth",
+    "title": "UniDepth",
+    "category": "Models",
+    "subsection": "Metric monocular",
+    "blurb": "Official code for UniDepth and UniDepthV2, universal monocular metric depth estimation that aims to work across cameras and domains.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 7
+  },
+  {
+    "url": "https://lpiccinelli-eth.github.io/pub/unidepth/",
+    "title": "UniDepth project page",
+    "category": "Models",
+    "subsection": "Metric monocular",
+    "blurb": "Official project site for UniDepth.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 8
+  },
+  {
+    "url": "https://arxiv.org/abs/2403.18913",
+    "title": "UniDepth paper",
+    "category": "Models",
+    "subsection": "Metric monocular",
+    "blurb": "Piccinelli et al., UniDepth: Universal Monocular Metric Depth Estimation, arXiv:2403.18913.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 9
+  },
+  {
+    "url": "https://arxiv.org/abs/2502.20110",
+    "title": "UniDepthV2 paper",
+    "category": "Models",
+    "subsection": "Metric monocular",
+    "blurb": "Piccinelli et al., UniDepthV2: Universal Monocular Metric Depth Estimation Made Simpler, arXiv:2502.20110.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 10
+  },
+  {
+    "url": "https://github.com/lpiccinelli-eth/UniK3D",
+    "title": "UniK3D",
+    "category": "Models",
+    "subsection": "Metric monocular",
+    "blurb": "Official code for UniK3D (CVPR 2025): universal camera monocular 3D estimation, a follow-on in the UniDepth line.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 11
+  },
+  {
+    "url": "https://lpiccinelli-eth.github.io/pub/unik3d/",
+    "title": "UniK3D project page",
+    "category": "Models",
+    "subsection": "Metric monocular",
+    "blurb": "Official project site for UniK3D.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 12
+  },
+  {
+    "url": "https://github.com/yuliangguo/depth_any_camera",
+    "title": "Depth Any Camera",
+    "category": "Models",
+    "subsection": "Metric monocular",
+    "blurb": "Official code for Depth Any Camera (CVPR 2025): zero-shot metric depth from any camera. MIT.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 13
+  },
+  {
+    "url": "https://yuliangguo.github.io/depth-any-camera/",
+    "title": "Depth Any Camera project page",
+    "category": "Models",
+    "subsection": "Metric monocular",
+    "blurb": "Official project site for Depth Any Camera.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 14
+  },
+  {
+    "url": "https://arxiv.org/abs/2501.02464",
+    "title": "Depth Any Camera paper",
+    "category": "Models",
+    "subsection": "Metric monocular",
+    "blurb": "Guo et al., Depth Any Camera: Zero-Shot Metric Depth Estimation from Any Camera, arXiv:2501.02464.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 15
+  },
+  {
+    "url": "https://github.com/zhyever/PatchFusion",
+    "title": "PatchFusion",
+    "category": "Models",
+    "subsection": "Metric monocular",
+    "blurb": "Official code for PatchFusion (CVPR 2024), a tile-based framework for high-resolution monocular metric depth. MIT.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 16
+  },
+  {
+    "url": "https://zhyever.github.io/PatchFusion/",
+    "title": "PatchFusion project page",
+    "category": "Models",
+    "subsection": "Metric monocular",
+    "blurb": "Official project site for PatchFusion.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 17
+  },
+  {
+    "url": "https://github.com/DepthAnything/PromptDA",
+    "title": "Prompt Depth Anything",
+    "category": "Models",
+    "subsection": "Metric monocular",
+    "blurb": "Official code for Prompt Depth Anything (PromptDA, CVPR 2025): prompting Depth Anything for high-resolution accurate metric depth. Apache-2.0.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 18
+  },
+  {
+    "url": "https://promptda.github.io/",
+    "title": "Prompt Depth Anything project page",
+    "category": "Models",
+    "subsection": "Metric monocular",
+    "blurb": "Official project site for Prompt Depth Anything.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 19
+  },
+  {
+    "url": "https://github.com/metric-anything/metric-anything",
+    "title": "MetricAnything",
+    "category": "Models",
+    "subsection": "Metric monocular",
+    "blurb": "Official code for MetricAnything, described in the repo as scaling metric depth pretraining with noisy heterogeneous sources (accepted to ECCV 2026). Apache-2.0.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 20
+  },
+  {
+    "url": "https://github.com/shariqfarooq123/AdaBins",
+    "title": "AdaBins",
+    "category": "Models",
+    "subsection": "Metric monocular",
+    "blurb": "Official implementation of AdaBins, metric monocular depth via adaptive bins. GPL-3.0.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 21
+  },
+  {
+    "url": "https://github.com/aim-uofa/AdelaiDepth",
+    "title": "AdelaiDepth",
+    "category": "Models",
+    "subsection": "Metric monocular",
+    "blurb": "Adelaide repo collecting Virtual Normal, DiverseDepth, and related single-image depth and 3D scene shape work. CC0-1.0 for the repo; check each project's terms.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 22
+  },
+  {
+    "url": "https://github.com/prs-eth/Marigold",
+    "title": "Marigold",
+    "category": "Models",
+    "subsection": "Diffusion and generative",
+    "blurb": "Official code for Marigold (CVPR 2024 Oral): repurposing diffusion image generators for monocular depth. Apache-2.0.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 1
+  },
+  {
+    "url": "https://marigoldmonodepth.github.io/",
+    "title": "Marigold project page",
+    "category": "Models",
+    "subsection": "Diffusion and generative",
+    "blurb": "Official project site for Marigold monocular depth.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 2
+  },
+  {
+    "url": "https://arxiv.org/abs/2312.02145",
+    "title": "Marigold paper",
+    "category": "Models",
+    "subsection": "Diffusion and generative",
+    "blurb": "Ke et al., Repurposing Diffusion-Based Image Generators for Monocular Depth Estimation, arXiv:2312.02145.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 3
+  },
+  {
+    "url": "https://huggingface.co/prs-eth/marigold-depth-v1-1",
+    "title": "Marigold Depth v1.1",
+    "category": "Models",
+    "subsection": "Diffusion and generative",
+    "blurb": "Hub weights for the Marigold depth v1.1 checkpoint from the official ETH Zurich group.",
+    "sources": [
+      "seed-manual",
+      "hf-api"
+    ],
+    "pin": 4
+  },
+  {
+    "url": "https://github.com/EnVision-Research/Lotus",
+    "title": "Lotus",
+    "category": "Models",
+    "subsection": "Diffusion and generative",
+    "blurb": "Official code for Lotus (ICLR 2025), a diffusion-based model for dense geometry prediction, including zero-shot depth and normals, with generative and regression (discriminative) checkpoints. Apache-2.0.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 5
+  },
+  {
+    "url": "https://lotus3d.github.io/",
+    "title": "Lotus project page",
+    "category": "Models",
+    "subsection": "Diffusion and generative",
+    "blurb": "Official project site for Lotus. The lotus-3d.github.io spelling does not resolve; this is the live page.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 6
+  },
+  {
+    "url": "https://arxiv.org/abs/2409.18124",
+    "title": "Lotus paper",
+    "category": "Models",
+    "subsection": "Diffusion and generative",
+    "blurb": "He, Li, et al., Lotus: Diffusion-based Visual Foundation Model for High-quality Dense Prediction, arXiv:2409.18124.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 7
+  },
+  {
+    "url": "https://huggingface.co/jingheya/lotus-depth-d-v2-0-disparity",
+    "title": "Lotus depth (regression, disparity)",
+    "category": "Models",
+    "subsection": "Diffusion and generative",
+    "blurb": "Hub checkpoint jingheya/lotus-depth-d-v2-0-disparity, the official discriminative / regression Lotus depth model in disparity.",
+    "sources": [
+      "seed-manual",
+      "hf-api"
+    ],
+    "pin": 8
+  },
+  {
+    "url": "https://huggingface.co/jingheya/lotus-depth-g-v2-1-disparity",
+    "title": "Lotus depth (generative, disparity)",
+    "category": "Models",
+    "subsection": "Diffusion and generative",
+    "blurb": "Hub checkpoint jingheya/lotus-depth-g-v2-1-disparity, the official generative Lotus depth model in disparity.",
+    "sources": [
+      "seed-manual",
+      "hf-api"
+    ],
+    "pin": 9
+  },
+  {
+    "url": "https://github.com/EnVision-Research/Lotus-2",
+    "title": "Lotus-2",
+    "category": "Models",
+    "subsection": "Diffusion and generative",
+    "blurb": "Official code for Lotus-2, a later geometric dense-prediction model built on a stronger image generator. Apache-2.0.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 10
+  },
+  {
+    "url": "https://lotus-2.github.io/",
+    "title": "Lotus-2 project page",
+    "category": "Models",
+    "subsection": "Diffusion and generative",
+    "blurb": "Official project site for Lotus-2.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 11
+  },
+  {
+    "url": "https://arxiv.org/abs/2512.01030",
+    "title": "Lotus-2 paper",
+    "category": "Models",
+    "subsection": "Diffusion and generative",
+    "blurb": "Lotus-2: Advancing Geometric Dense Prediction with Powerful Image Generative Model, arXiv:2512.01030, as cited by the official repo.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 12
+  },
+  {
+    "url": "https://github.com/CompVis/depth-fm",
+    "title": "DepthFM",
+    "category": "Models",
+    "subsection": "Diffusion and generative",
+    "blurb": "Official CompVis code for DepthFM (AAAI 2025 Oral): fast monocular depth estimation with flow matching. MIT.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 13
+  },
+  {
+    "url": "https://depthfm.github.io/",
+    "title": "DepthFM project page",
+    "category": "Models",
+    "subsection": "Diffusion and generative",
+    "blurb": "Official project site for DepthFM.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 14
+  },
+  {
+    "url": "https://arxiv.org/abs/2403.13788",
+    "title": "DepthFM paper",
+    "category": "Models",
+    "subsection": "Diffusion and generative",
+    "blurb": "Gui et al., DepthFM: Fast Monocular Depth Estimation with Flow Matching, arXiv:2403.13788.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 15
+  },
+  {
+    "url": "https://github.com/fuxiao0719/GeoWizard",
+    "title": "GeoWizard",
+    "category": "Models",
+    "subsection": "Diffusion and generative",
+    "blurb": "Official code for GeoWizard (ECCV 2024): diffusion priors for 3D geometry estimation, including depth, from a single image.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 16
+  },
+  {
+    "url": "https://fuxiao0719.github.io/projects/geowizard/",
+    "title": "GeoWizard project page",
+    "category": "Models",
+    "subsection": "Diffusion and generative",
+    "blurb": "Official project site for GeoWizard.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 17
+  },
+  {
+    "url": "https://github.com/Aradhye2002/EcoDepth",
+    "title": "ECoDepth",
+    "category": "Models",
+    "subsection": "Diffusion and generative",
+    "blurb": "Official code for ECoDepth (CVPR 2024): effective conditioning of diffusion models for monocular depth estimation.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 18
+  },
+  {
+    "url": "https://ecodepth-iitd.github.io/",
+    "title": "ECoDepth project page",
+    "category": "Models",
+    "subsection": "Diffusion and generative",
+    "blurb": "Official project site for ECoDepth.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 19
+  },
+  {
+    "url": "https://arxiv.org/abs/2403.18807",
+    "title": "ECoDepth paper",
+    "category": "Models",
+    "subsection": "Diffusion and generative",
+    "blurb": "Patni, Agarwal, and Arora, ECoDepth: Effective Conditioning of Diffusion Models for Monocular Depth Estimation, arXiv:2403.18807.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 20
+  },
+  {
+    "url": "https://github.com/microsoft/MoGe",
+    "title": "MoGe",
+    "category": "Models",
+    "subsection": "Geometry and point maps",
+    "blurb": "Official Microsoft code for MoGe, MoGe-2, and MoGe-3: monocular geometry (point maps, depth, optional normals and metric scale) from a single open-domain image. Check the LICENSE in the repo; it is not an OSI SPDX id on GitHub.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 1
+  },
+  {
+    "url": "https://wangrc.site/MoGePage/",
+    "title": "MoGe project page",
+    "category": "Models",
+    "subsection": "Geometry and point maps",
+    "blurb": "Official project site for MoGe (v1). The repo points here for videos and interactive results.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 2
+  },
+  {
+    "url": "https://arxiv.org/abs/2410.19115",
+    "title": "MoGe paper",
+    "category": "Models",
+    "subsection": "Geometry and point maps",
+    "blurb": "Wang et al., MoGe: Unlocking Accurate Monocular Geometry Estimation for Open-Domain Images with Optimal Training Supervision, arXiv:2410.19115.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 3
+  },
+  {
+    "url": "https://arxiv.org/abs/2507.02546",
+    "title": "MoGe-2 paper",
+    "category": "Models",
+    "subsection": "Geometry and point maps",
+    "blurb": "Wang et al., MoGe-2: Accurate Monocular Geometry with Metric Scale and Sharp Details, arXiv:2507.02546.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 4
+  },
+  {
+    "url": "https://huggingface.co/Ruicheng/moge-2-vitl",
+    "title": "MoGe-2 ViT-L",
+    "category": "Models",
+    "subsection": "Geometry and point maps",
+    "blurb": "Hub weights for MoGe-2 ViT-L, listed in the official MoGe README as a metric-scale monocular geometry model.",
+    "sources": [
+      "seed-manual",
+      "hf-api"
+    ],
+    "pin": 5
+  },
+  {
+    "url": "https://arxiv.org/abs/2607.17967",
+    "title": "MoGe-3 paper",
+    "category": "Models",
+    "subsection": "Geometry and point maps",
+    "blurb": "MoGe-3: Fine-Detail Monocular Geometry Estimation with Self-Guided Sparse Volumetric Refinement, arXiv:2607.17967, as cited by the official MoGe repo.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 6
+  },
+  {
+    "url": "https://huggingface.co/Ruicheng/moge-3-vitl",
+    "title": "MoGe-3 ViT-L",
+    "category": "Models",
+    "subsection": "Geometry and point maps",
+    "blurb": "Hub weights for MoGe-3 ViT-L, listed in the official MoGe README.",
+    "sources": [
+      "seed-manual",
+      "hf-api"
+    ],
+    "pin": 7
+  },
+  {
+    "url": "https://github.com/facebookresearch/vggt",
+    "title": "VGGT",
+    "category": "Models",
+    "subsection": "Geometry and point maps",
+    "blurb": "Official Meta FAIR code for VGGT (CVPR 2025 Best Paper): Visual Geometry Grounded Transformer, for multi-view geometry including depth.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 8
+  },
+  {
+    "url": "https://arxiv.org/abs/2503.11651",
+    "title": "VGGT paper",
+    "category": "Models",
+    "subsection": "Geometry and point maps",
+    "blurb": "Wang et al., VGGT: Visual Geometry Grounded Transformer, arXiv:2503.11651.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 9
+  },
+  {
+    "url": "https://github.com/naver/dust3r",
+    "title": "DUSt3R",
+    "category": "Models",
+    "subsection": "Geometry and point maps",
+    "blurb": "Official Naver Labs code for DUSt3R, geometric 3D vision from image pairs that also yields dense depth / point maps. The project site did not reliably load for this checker, so only the repo is listed.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 10
+  },
+  {
+    "url": "https://github.com/DepthAnything/Video-Depth-Anything",
+    "title": "Video Depth Anything",
+    "category": "Video and temporal depth",
+    "subsection": "",
+    "blurb": "Official code (CVPR 2025 Highlight) for consistent depth on long videos, built on Depth Anything V2, with relative and later metric checkpoints. Apache-2.0.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 1
+  },
+  {
+    "url": "https://videodepthanything.github.io/",
+    "title": "Video Depth Anything project page",
+    "category": "Video and temporal depth",
+    "subsection": "",
+    "blurb": "Official project site for Video Depth Anything.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 2
+  },
+  {
+    "url": "https://arxiv.org/abs/2501.12375",
+    "title": "Video Depth Anything paper",
+    "category": "Video and temporal depth",
+    "subsection": "",
+    "blurb": "Chen et al., Video Depth Anything: Consistent Depth Estimation for Super-Long Videos, arXiv:2501.12375, as cited by the official repo.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 3
+  },
+  {
+    "url": "https://github.com/Tencent/DepthCrafter",
+    "title": "DepthCrafter",
+    "category": "Video and temporal depth",
+    "subsection": "",
+    "blurb": "Official Tencent code (CVPR 2025 Highlight) for generating temporally consistent long depth sequences for open-world videos with a diffusion prior, without requiring camera poses or optical flow.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 4
+  },
+  {
+    "url": "https://depthcrafter.github.io/",
+    "title": "DepthCrafter project page",
+    "category": "Video and temporal depth",
+    "subsection": "",
+    "blurb": "Official project site for DepthCrafter.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 5
+  },
+  {
+    "url": "https://arxiv.org/abs/2409.02095",
+    "title": "DepthCrafter paper",
+    "category": "Video and temporal depth",
+    "subsection": "",
+    "blurb": "Hu et al., DepthCrafter: Generating Consistent Long Depth Sequences for Open-world Videos, arXiv:2409.02095.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 6
+  },
+  {
+    "url": "https://huggingface.co/tencent/DepthCrafter",
+    "title": "DepthCrafter weights",
+    "category": "Video and temporal depth",
+    "subsection": "",
+    "blurb": "Official Hub weights for DepthCrafter.",
+    "sources": [
+      "seed-manual",
+      "hf-api"
+    ],
+    "pin": 7
+  },
+  {
+    "url": "https://github.com/TencentARC/GeometryCrafter",
+    "title": "GeometryCrafter",
+    "category": "Video and temporal depth",
+    "subsection": "",
+    "blurb": "Official Tencent ARC code (ICCV 2025) for consistent geometry estimation on open-world videos, a follow-on to DepthCrafter aimed at video-to-point-cloud geometry.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 8
+  },
+  {
+    "url": "https://geometrycrafter.github.io/",
+    "title": "GeometryCrafter project page",
+    "category": "Video and temporal depth",
+    "subsection": "",
+    "blurb": "Official project site for GeometryCrafter.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 9
+  },
+  {
+    "url": "https://arxiv.org/abs/2504.01016",
+    "title": "GeometryCrafter paper",
+    "category": "Video and temporal depth",
+    "subsection": "",
+    "blurb": "GeometryCrafter: Consistent Geometry Estimation for Open-world Videos with Diffusion Priors, arXiv:2504.01016, as cited by the official repo.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 10
+  },
+  {
+    "url": "https://github.com/prs-eth/RollingDepth",
+    "title": "RollingDepth",
+    "category": "Video and temporal depth",
+    "subsection": "",
+    "blurb": "Official ETH Zurich code (CVPR 2025) for video depth without a dedicated video backbone, rolling a monocular depth model over frames. Apache-2.0.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 11
+  },
+  {
+    "url": "https://rollingdepth.github.io/",
+    "title": "RollingDepth project page",
+    "category": "Video and temporal depth",
+    "subsection": "",
+    "blurb": "Official project site for RollingDepth.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 12
+  },
+  {
+    "url": "https://arxiv.org/abs/2411.19189",
+    "title": "RollingDepth paper",
+    "category": "Video and temporal depth",
+    "subsection": "",
+    "blurb": "Video Depth without Video Models, arXiv:2411.19189, as cited by the official RollingDepth repo.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 13
+  },
+  {
+    "url": "https://github.com/EnVision-Research/DVD",
+    "title": "DVD",
+    "category": "Video and temporal depth",
+    "subsection": "",
+    "blurb": "Official code for DVD: Deterministic Video Depth Estimation with Generative Priors. Apache-2.0.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 14
+  },
+  {
+    "url": "https://dvd-project.github.io/",
+    "title": "DVD project page",
+    "category": "Video and temporal depth",
+    "subsection": "",
+    "blurb": "Official project site for DVD.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 15
+  },
+  {
+    "url": "https://arxiv.org/abs/2603.12250",
+    "title": "DVD paper",
+    "category": "Video and temporal depth",
+    "subsection": "",
+    "blurb": "DVD: Deterministic Video Depth Estimation with Generative Priors, arXiv:2603.12250, as cited by the official repo.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 16
+  },
+  {
+    "url": "https://huggingface.co/docs/transformers/en/model_doc/depth_pro",
+    "title": "transformers DepthPro docs",
+    "category": "Runtimes and ports",
+    "subsection": "Libraries and official ports",
+    "blurb": "Hugging Face transformers documentation for the DepthPro model class. The examples use apple/DepthPro and apple/DepthPro-hf (Depth Pro v1), not the Depth Pro 2 family.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 1
+  },
+  {
+    "url": "https://huggingface.co/docs/transformers/en/model_doc/depth_anything",
+    "title": "transformers Depth Anything docs",
+    "category": "Runtimes and ports",
+    "subsection": "Libraries and official ports",
+    "blurb": "Hugging Face transformers documentation for the Depth Anything model.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 2
+  },
+  {
+    "url": "https://huggingface.co/docs/transformers/en/model_doc/depth_anything_v2",
+    "title": "transformers Depth Anything V2 docs",
+    "category": "Runtimes and ports",
+    "subsection": "Libraries and official ports",
+    "blurb": "Hugging Face transformers documentation for Depth Anything V2.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 3
+  },
+  {
+    "url": "https://huggingface.co/docs/transformers/en/model_doc/zoedepth",
+    "title": "transformers ZoeDepth docs",
+    "category": "Runtimes and ports",
+    "subsection": "Libraries and official ports",
+    "blurb": "Hugging Face transformers documentation for ZoeDepth.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 4
+  },
+  {
+    "url": "https://huggingface.co/docs/transformers/en/model_doc/dpt",
+    "title": "transformers DPT docs",
+    "category": "Runtimes and ports",
+    "subsection": "Libraries and official ports",
+    "blurb": "Hugging Face transformers documentation for DPT dense prediction / depth models.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 5
+  },
+  {
+    "url": "https://github.com/fabio-sim/Depth-Anything-ONNX",
+    "title": "Depth Anything ONNX",
+    "category": "Runtimes and ports",
+    "subsection": "ONNX, TensorRT and Core ML",
+    "blurb": "ONNX-compatible export and inference for Depth Anything. Apache-2.0. Community port, not the official Apple or Depth Anything runtime.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 1
+  },
+  {
+    "url": "https://huggingface.co/onnx-community/depth-anything-v2-small",
+    "title": "Depth Anything V2 Small (ONNX Community)",
+    "category": "Runtimes and ports",
+    "subsection": "ONNX, TensorRT and Core ML",
+    "blurb": "ONNX Community Hub build of Depth Anything V2 Small, suitable for local ONNX runtimes and some in-browser pipelines.",
+    "sources": [
+      "seed-manual",
+      "hf-api"
+    ],
+    "pin": 2
+  },
+  {
+    "url": "https://github.com/spacewalk01/depth-anything-tensorrt",
+    "title": "Depth Anything TensorRT",
+    "category": "Runtimes and ports",
+    "subsection": "ONNX, TensorRT and Core ML",
+    "blurb": "C++ TensorRT implementation of Depth Anything V1 and V2. MIT. Community port.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 3
+  },
+  {
+    "url": "https://github.com/kijai/ComfyUI-DepthAnythingV2",
+    "title": "ComfyUI-DepthAnythingV2",
+    "category": "Runtimes and ports",
+    "subsection": "ComfyUI and creative tools",
+    "blurb": "Kijai's ComfyUI nodes for Depth Anything V2 inference.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 1
+  },
+  {
+    "url": "https://github.com/spacepxl/ComfyUI-Depth-Pro",
+    "title": "ComfyUI-Depth-Pro",
+    "category": "Runtimes and ports",
+    "subsection": "ComfyUI and creative tools",
+    "blurb": "ComfyUI nodes for Apple Depth Pro. The repo points at the original ml-depth-pro line (v1); this list does not claim Depth Pro 2 support without a first-party note.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 2
+  },
+  {
+    "url": "https://github.com/akatz-ai/ComfyUI-DepthCrafter-Nodes",
+    "title": "ComfyUI-DepthCrafter-Nodes",
+    "category": "Runtimes and ports",
+    "subsection": "ComfyUI and creative tools",
+    "blurb": "Community ComfyUI port of Tencent's DepthCrafter, for temporally consistent video depth inside ComfyUI.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 3
+  },
+  {
+    "url": "https://github.com/Fannovel16/comfyui_controlnet_aux",
+    "title": "ComfyUI ControlNet aux preprocessors",
+    "category": "Runtimes and ports",
+    "subsection": "ComfyUI and creative tools",
+    "blurb": "ComfyUI's widely used ControlNet auxiliary preprocessors, including depth map preprocessors used with depth-conditioned generation. Apache-2.0.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 4
+  },
+  {
+    "url": "https://github.com/huggingface/transformers.js",
+    "title": "Transformers.js",
+    "category": "Runtimes and ports",
+    "subsection": "Browser",
+    "blurb": "Official library for running Transformers models in the browser, with no server. Apache-2.0. Several community depth WebGPU Spaces returned 401 to this checker and are not listed.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 1
+  },
+  {
+    "url": "https://huggingface.co/docs/transformers.js/en/index",
+    "title": "Transformers.js docs",
+    "category": "Runtimes and ports",
+    "subsection": "Browser",
+    "blurb": "Documentation home for Transformers.js.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 2
+  },
+  {
+    "url": "https://huggingface.co/docs/transformers.js/en/pipelines",
+    "title": "Transformers.js pipelines docs",
+    "category": "Runtimes and ports",
+    "subsection": "Browser",
+    "blurb": "Pipeline reference for Transformers.js, the usual entry for vision tasks in the browser.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 3
+  },
+  {
+    "url": "https://huggingface.co/spaces/akhaliq/depth-pro",
+    "title": "Depth Pro v1 Space (akhaliq)",
+    "category": "Demos",
+    "subsection": "",
+    "blurb": "Community Gradio Space for the original Apple Depth Pro model.",
+    "sources": [
+      "seed-manual",
+      "hf-api"
+    ],
+    "pin": 1
+  },
+  {
+    "url": "https://huggingface.co/spaces/LiheYoung/Depth-Anything",
+    "title": "Depth Anything Space",
+    "category": "Demos",
+    "subsection": "",
+    "blurb": "Official-line Gradio Space for Depth Anything v1.",
+    "sources": [
+      "seed-manual",
+      "hf-api"
+    ],
+    "pin": 2
+  },
+  {
+    "url": "https://huggingface.co/spaces/depth-anything/Depth-Anything-V2",
+    "title": "Depth Anything V2 Space",
+    "category": "Demos",
+    "subsection": "",
+    "blurb": "Official Gradio Space for Depth Anything V2.",
+    "sources": [
+      "seed-manual",
+      "hf-api"
+    ],
+    "pin": 3
+  },
+  {
+    "url": "https://huggingface.co/spaces/depth-anything/depth-anything-3",
+    "title": "Depth Anything 3 Space",
+    "category": "Demos",
+    "subsection": "",
+    "blurb": "Official Gradio Space for Depth Anything 3.",
+    "sources": [
+      "seed-manual",
+      "hf-api"
+    ],
+    "pin": 4
+  },
+  {
+    "url": "https://huggingface.co/spaces/depth-anything/Video-Depth-Anything",
+    "title": "Video Depth Anything Space",
+    "category": "Demos",
+    "subsection": "",
+    "blurb": "Official Gradio Space for Video Depth Anything.",
+    "sources": [
+      "seed-manual",
+      "hf-api"
+    ],
+    "pin": 5
+  },
+  {
+    "url": "https://huggingface.co/spaces/tencent/DepthCrafter",
+    "title": "DepthCrafter Space",
+    "category": "Demos",
+    "subsection": "",
+    "blurb": "Official Tencent Gradio Space for DepthCrafter.",
+    "sources": [
+      "seed-manual",
+      "hf-api"
+    ],
+    "pin": 6
+  },
+  {
+    "url": "https://huggingface.co/spaces/TencentARC/GeometryCrafter",
+    "title": "GeometryCrafter Space",
+    "category": "Demos",
+    "subsection": "",
+    "blurb": "Official Tencent ARC Gradio Space for GeometryCrafter.",
+    "sources": [
+      "seed-manual",
+      "hf-api"
+    ],
+    "pin": 7
+  },
+  {
+    "url": "https://huggingface.co/spaces/prs-eth/marigold",
+    "title": "Marigold Space",
+    "category": "Demos",
+    "subsection": "",
+    "blurb": "Official ETH Zurich Gradio Space for Marigold.",
+    "sources": [
+      "seed-manual",
+      "hf-api"
+    ],
+    "pin": 8
+  },
+  {
+    "url": "https://huggingface.co/spaces/Ruicheng/MoGe",
+    "title": "MoGe Space",
+    "category": "Demos",
+    "subsection": "",
+    "blurb": "Official Gradio Space for MoGe, linked from the MoGe README.",
+    "sources": [
+      "seed-manual",
+      "hf-api"
+    ],
+    "pin": 9
+  },
+  {
+    "url": "https://huggingface.co/spaces/Ruicheng/MoGe-2",
+    "title": "MoGe-2 Space",
+    "category": "Demos",
+    "subsection": "",
+    "blurb": "Official Gradio Space for MoGe-2, linked from the MoGe README.",
+    "sources": [
+      "seed-manual",
+      "hf-api"
+    ],
+    "pin": 10
+  },
+  {
+    "url": "https://github.com/vt-vl-lab/3d-photo-inpainting",
+    "title": "3D Photo Inpainting",
+    "category": "Use cases",
+    "subsection": "3D photos and parallax",
+    "blurb": "Official code (CVPR 2020) for 3D photography from a single RGB-D image via context-aware layered depth inpainting, the usual open baseline for monocular 3D photo / parallax effects.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 1
+  },
+  {
+    "url": "https://shihmengli.github.io/3D-Photo-Inpainting/",
+    "title": "3D Photo Inpainting project page",
+    "category": "Use cases",
+    "subsection": "3D photos and parallax",
+    "blurb": "Official project site for 3D Photography using Context-aware Layered Depth Inpainting.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 2
+  },
+  {
+    "url": "https://arxiv.org/abs/2004.04727",
+    "title": "3D Photo Inpainting paper",
+    "category": "Use cases",
+    "subsection": "3D photos and parallax",
+    "blurb": "Shih et al., 3D Photography using Context-aware Layered Depth Inpainting, arXiv:2004.04727.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 3
+  },
+  {
+    "url": "https://github.com/graphdeco-inria/gaussian-splatting",
+    "title": "3D Gaussian Splatting",
+    "category": "Use cases",
+    "subsection": "Gaussian splatting and NeRF",
+    "blurb": "Original INRIA / Max Planck implementation of 3D Gaussian Splatting for real-time radiance field rendering. Depth maps from monocular models are a common way to initialize or regularize later splat systems.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 1
+  },
+  {
+    "url": "https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/",
+    "title": "3D Gaussian Splatting project page",
+    "category": "Use cases",
+    "subsection": "Gaussian splatting and NeRF",
+    "blurb": "Official project site for 3D Gaussian Splatting.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 2
+  },
+  {
+    "url": "https://github.com/maturk/dn-splatter",
+    "title": "DN-Splatter",
+    "category": "Use cases",
+    "subsection": "Gaussian splatting and NeRF",
+    "blurb": "Official code for DN-Splatter: depth and normal priors for Gaussian splatting and meshing. Apache-2.0.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 3
+  },
+  {
+    "url": "https://maturk.github.io/dn-splatter/",
+    "title": "DN-Splatter project page",
+    "category": "Use cases",
+    "subsection": "Gaussian splatting and NeRF",
+    "blurb": "Official project site for DN-Splatter.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 4
+  },
+  {
+    "url": "https://arxiv.org/abs/2403.17822",
+    "title": "DN-Splatter paper",
+    "category": "Use cases",
+    "subsection": "Gaussian splatting and NeRF",
+    "blurb": "Turkulainen et al., DN-Splatter: Depth and Normal Priors for Gaussian Splatting and Meshing, arXiv:2403.17822.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 5
+  },
+  {
+    "url": "https://github.com/cvg/depthsplat",
+    "title": "DepthSplat",
+    "category": "Use cases",
+    "subsection": "Gaussian splatting and NeRF",
+    "blurb": "Official ETH Zurich / Microsoft code (CVPR 2025) connecting Gaussian splatting and depth. MIT.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 6
+  },
+  {
+    "url": "https://haofeixu.github.io/depthsplat/",
+    "title": "DepthSplat project page",
+    "category": "Use cases",
+    "subsection": "Gaussian splatting and NeRF",
+    "blurb": "Official project site for DepthSplat.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 7
+  },
+  {
+    "url": "https://arxiv.org/abs/2410.13862",
+    "title": "DepthSplat paper",
+    "category": "Use cases",
+    "subsection": "Gaussian splatting and NeRF",
+    "blurb": "Xu et al., DepthSplat: Connecting Gaussian Splatting and Depth, arXiv:2410.13862.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 8
+  },
+  {
+    "url": "https://github.com/nerfstudio-project/nerfstudio",
+    "title": "Nerfstudio",
+    "category": "Use cases",
+    "subsection": "Gaussian splatting and NeRF",
+    "blurb": "Open studio for neural radiance fields and later 3D methods, often used with depth supervision or depth-initialized geometry. Apache-2.0.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 9
+  },
+  {
+    "url": "https://docs.nerf.studio/",
+    "title": "Nerfstudio docs",
+    "category": "Use cases",
+    "subsection": "Gaussian splatting and NeRF",
+    "blurb": "Documentation for Nerfstudio.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 10
+  },
+  {
+    "url": "https://developer.apple.com/documentation/ARKit",
+    "title": "ARKit",
+    "category": "Use cases",
+    "subsection": "AR occlusion",
+    "blurb": "Apple's ARKit documentation home. Scene depth and people occlusion on supported devices typically come from platform depth sensors, not from a learned monocular model; listed because occlusion is a primary use of a depth map in AR.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 1
+  },
+  {
+    "url": "https://developer.apple.com/documentation/arkit/ardepthdata",
+    "title": "ARDepthData",
+    "category": "Use cases",
+    "subsection": "AR occlusion",
+    "blurb": "ARKit API for per-pixel scene depth data used to occlude or place virtual content.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 2
+  },
+  {
+    "url": "https://developer.apple.com/documentation/arkit/occluding-virtual-content-with-people",
+    "title": "ARKit people occlusion",
+    "category": "Use cases",
+    "subsection": "AR occlusion",
+    "blurb": "Apple's guide to occluding virtual content with people in an ARKit scene.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 3
+  },
+  {
+    "url": "https://developer.apple.com/documentation/arkit/displaying-a-point-cloud-using-scene-depth",
+    "title": "ARKit scene-depth point cloud",
+    "category": "Use cases",
+    "subsection": "AR occlusion",
+    "blurb": "Apple's sample for displaying a point cloud from ARKit scene depth.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 4
+  },
+  {
+    "url": "https://immersive-web.github.io/depth-sensing/",
+    "title": "WebXR Depth Sensing",
+    "category": "Use cases",
+    "subsection": "AR occlusion",
+    "blurb": "Immersive Web Working Group specification for exposing a device depth buffer to WebXR scenes, typically sensor depth, for occlusion and hit-testing in the browser.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 5
+  },
+  {
+    "url": "https://github.com/immersive-web/depth-sensing",
+    "title": "WebXR Depth Sensing repo",
+    "category": "Use cases",
+    "subsection": "AR occlusion",
+    "blurb": "Working-group repository for the WebXR Depth Sensing specification.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 6
+  },
+  {
+    "url": "https://github.com/Theo-SAMINADIN-td/NukeDepthCrafter",
+    "title": "NukeDepthCrafter",
+    "category": "Use cases",
+    "subsection": "VFX and relighting",
+    "blurb": "Community Nuke plugin that runs DepthCrafter inside Foundry Nuke, so VFX comps can generate temporally consistent depth sequences, including EXR export. Linked from the official DepthCrafter README's community section.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 1
+  },
+  {
+    "url": "https://github.com/lllyasviel/ControlNet",
+    "title": "ControlNet",
+    "category": "Use cases",
+    "subsection": "Depth-conditioned generation",
+    "blurb": "Official ControlNet repo for spatially controlling diffusion models, including depth-conditioned generation. Apache-2.0.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 1
+  },
+  {
+    "url": "https://huggingface.co/lllyasviel/control_v11f1p_sd15_depth",
+    "title": "ControlNet v1.1 depth (SD 1.5)",
+    "category": "Use cases",
+    "subsection": "Depth-conditioned generation",
+    "blurb": "Official Hub weights for ControlNet v1.1 depth on Stable Diffusion 1.5, the usual depth-to-image ControlNet checkpoint.",
+    "sources": [
+      "seed-manual",
+      "hf-api"
+    ],
+    "pin": 2
+  },
+  {
+    "url": "https://huggingface.co/docs/diffusers/using-diffusers/controlnet",
+    "title": "Diffusers ControlNet guide",
+    "category": "Use cases",
+    "subsection": "Depth-conditioned generation",
+    "blurb": "Hugging Face Diffusers guide to running ControlNet, including depth conditioning.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 3
+  },
+  {
+    "url": "https://www.cvlibs.net/datasets/kitti/eval_depth.php",
+    "title": "KITTI depth evaluation",
+    "category": "Datasets and benchmarks",
+    "subsection": "",
+    "blurb": "Official KITTI depth prediction evaluation page, the long-running outdoor driving monocular and stereo depth benchmark.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 1
+  },
+  {
+    "url": "https://cs.nyu.edu/~fergus/datasets/nyu_depth_v2.html",
+    "title": "NYU Depth V2",
+    "category": "Datasets and benchmarks",
+    "subsection": "",
+    "blurb": "NYU-Depth V2 indoor RGB-D dataset page (current URL under ~fergus; the older ~silberman path redirects here). A standard indoor monocular depth test set.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 2
+  },
+  {
+    "url": "https://sintel.is.tue.mpg.de/",
+    "title": "MPI Sintel",
+    "category": "Datasets and benchmarks",
+    "subsection": "",
+    "blurb": "MPI Sintel dataset and benchmark site. Depth Pro 2 reports sharpness and temporal jitter averaged over Sintel and Spring. The dedicated /depth path returned 500 to this checker, so the main site is the listed entry.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 3
+  },
+  {
+    "url": "https://spring-benchmark.org/",
+    "title": "Spring",
+    "category": "Datasets and benchmarks",
+    "subsection": "",
+    "blurb": "Spring dataset and benchmark for high-resolution stereo, optical flow, and scene flow, including per-frame disparity used as depth. Depth Pro 2 uses Spring, with Sintel, for its official sharpness and jitter comparison.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 4
+  },
+  {
+    "url": "https://arxiv.org/abs/2303.01943",
+    "title": "Spring paper",
+    "category": "Datasets and benchmarks",
+    "subsection": "",
+    "blurb": "Mehl, Schmalfuss, Jahedi, Nalivayko, and Bruhn, Spring: A High-Resolution High-Detail Dataset and Benchmark for Scene Flow, Optical Flow and Stereo, arXiv:2303.01943, as linked from the official Spring site.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 5
+  },
+  {
+    "url": "https://www.eth3d.net/",
+    "title": "ETH3D",
+    "category": "Datasets and benchmarks",
+    "subsection": "",
+    "blurb": "ETH3D benchmark home for multi-view stereo, high-resolution geometry, and related depth evaluation.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 6
+  },
+  {
+    "url": "https://www.eth3d.net/datasets",
+    "title": "ETH3D datasets",
+    "category": "Datasets and benchmarks",
+    "subsection": "",
+    "blurb": "ETH3D dataset download and documentation page.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 7
+  },
+  {
+    "url": "https://diode-dataset.org/",
+    "title": "DIODE",
+    "category": "Datasets and benchmarks",
+    "subsection": "",
+    "blurb": "DIODE: a dense indoor and outdoor depth dataset with high-precision LiDAR ground truth.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 8
+  },
+  {
+    "url": "https://arxiv.org/abs/1908.00463",
+    "title": "DIODE paper",
+    "category": "Datasets and benchmarks",
+    "subsection": "",
+    "blurb": "Vasiljevic et al., DIODE: A Dense Indoor and Outdoor DEpth Dataset, arXiv:1908.00463.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 9
+  },
+  {
+    "url": "https://github.com/ScanNet/ScanNet",
+    "title": "ScanNet",
+    "category": "Datasets and benchmarks",
+    "subsection": "",
+    "blurb": "Official ScanNet RGB-D indoor scan dataset repository. The project website did not reliably load for this checker, so the repo is the listed entry.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 10
+  },
+  {
+    "url": "https://github.com/apple-aiml-research/ml-hypersim",
+    "title": "Hypersim",
+    "category": "Datasets and benchmarks",
+    "subsection": "",
+    "blurb": "Apple's Hypersim photorealistic synthetic indoor dataset, often used for monocular depth and scene understanding. The older apple/ml-hypersim URL redirects here.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 11
+  },
+  {
+    "url": "https://www.cs.cornell.edu/projects/megadepth/",
+    "title": "MegaDepth",
+    "category": "Datasets and benchmarks",
+    "subsection": "",
+    "blurb": "Cornell MegaDepth: single-view depth supervision mined from internet photos and multi-view stereo.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 12
+  },
+  {
+    "url": "https://github.com/YoYo000/BlendedMVS",
+    "title": "BlendedMVS",
+    "category": "Datasets and benchmarks",
+    "subsection": "",
+    "blurb": "Official repo for BlendedMVS, a large-scale dataset for generalized multi-view stereo, also used as depth supervision.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 13
+  },
+  {
+    "url": "https://europe.naverlabs.com/proxy-virtual-worlds-vkitti-2/",
+    "title": "Virtual KITTI 2",
+    "category": "Datasets and benchmarks",
+    "subsection": "",
+    "blurb": "Naver Labs Europe page for Virtual KITTI 2, a synthetic driving dataset with ground-truth depth and related labels.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 14
+  },
+  {
+    "url": "https://vision.middlebury.edu/stereo/data/",
+    "title": "Middlebury Stereo datasets",
+    "category": "Datasets and benchmarks",
+    "subsection": "",
+    "blurb": "Middlebury stereo evaluation datasets, a classic source of high-quality disparity / depth maps.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 15
+  },
+  {
+    "url": "https://github.com/TRI-ML/DDAD",
+    "title": "DDAD",
+    "category": "Datasets and benchmarks",
+    "subsection": "",
+    "blurb": "Toyota Research Institute Dense Depth for Autonomous Driving dataset, long-range monocular and stereo depth in driving scenes.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 16
+  },
+  {
+    "url": "https://cvg.cit.tum.de/data/datasets/rgbd-dataset",
+    "title": "TUM RGB-D",
+    "category": "Datasets and benchmarks",
+    "subsection": "",
+    "blurb": "TUM RGB-D dataset of indoor RGB-D sequences with camera trajectories, used for depth, odometry, and SLAM evaluation.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 17
+  },
+  {
+    "url": "https://github.com/choyingw/Awesome-Monocular-Depth",
+    "title": "Awesome Monocular Depth",
+    "category": "Awesome lists and indexes",
+    "subsection": "",
+    "blurb": "Curated list of monocular depth estimation papers, last updated in the mid-2024 era on the landing page. Consulted as an index, not bulk-imported.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 1
+  },
+  {
+    "url": "https://github.com/Ideal-111/Awesome-Foundation-Model-Based-Depth",
+    "title": "Awesome Foundation-Model-Based Depth",
+    "category": "Awesome lists and indexes",
+    "subsection": "",
+    "blurb": "Curated list of foundation-model depth estimation and completion papers, including 2025-2026 work such as Depth Anything 3 and MetricAnything. The older Depth-Foundation-Model URL redirects here.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 2
+  },
+  {
+    "url": "https://github.com/bikhanal/awesome-360-depth-estimation",
+    "title": "Awesome 360 Depth Estimation",
+    "category": "Awesome lists and indexes",
+    "subsection": "",
+    "blurb": "Curated list of 360-degree / panoramic monocular depth papers.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 3
+  },
+  {
+    "url": "https://github.com/AIVFI/Video-Depth-Estimation-Rankings-and-Stereo-Video-Conversion-Rankings",
+    "title": "Video depth estimation rankings",
+    "category": "Awesome lists and indexes",
+    "subsection": "",
+    "blurb": "Community rankings for video depth estimation and stereo video conversion. An older repo path redirects to this canonical name.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 4
+  },
+  {
+    "url": "https://github.com/topics/monocular-depth-estimation",
+    "title": "GitHub topic: monocular-depth-estimation",
+    "category": "Awesome lists and indexes",
+    "subsection": "",
+    "blurb": "GitHub topic page that surfaces public monocular depth repositories.",
+    "sources": [
+      "seed-manual"
+    ],
+    "pin": 5
+  }
+]

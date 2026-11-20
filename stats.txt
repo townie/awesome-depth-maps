@@ -1,0 +1,42 @@
+unique_links	176
+
+by_category
+Depth Pro 2	13
+Models	77
+Video and temporal depth	16
+Runtimes and ports	15
+Demos	10
+Use cases	23
+Datasets and benchmarks	17
+Awesome lists and indexes	5
+
+by_subsection
+Depth Pro 2 / Official release	5
+Depth Pro 2 / Sizes and weights	5
+Depth Pro 2 / Ports and demos	3
+Models / Depth Pro v1	5
+Models / Foundation and relative depth	20
+Models / Metric monocular	22
+Models / Diffusion and generative	20
+Models / Geometry and point maps	10
+Video and temporal depth / (none)	16
+Runtimes and ports / Libraries and official ports	5
+Runtimes and ports / ONNX, TensorRT and Core ML	3
+Runtimes and ports / ComfyUI and creative tools	4
+Runtimes and ports / Browser	3
+Demos / (none)	10
+Use cases / 3D photos and parallax	3
+Use cases / Gaussian splatting and NeRF	10
+Use cases / AR occlusion	6
+Use cases / VFX and relighting	1
+Use cases / Depth-conditioned generation	3
+Datasets and benchmarks / (none)	17
+Awesome lists and indexes / (none)	5
+
+by_source_appearance_count
+# a link counted once per source tag
+seed-manual	176
+hf-api	34
+vendor-pages	16
+
+json_count_matches_unique	True
